@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Southernsanandreassuperautos</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        /* Agrega estilos CSS aquí según tus preferencias */
+        .vehicle {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        img {
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="banner.png" alt="Banner de vehículos disponibles" id="banner">
+    <div id="vehicles">
+        <!-- Aquí se cargarán los vehículos dinámicamente con JavaScript -->
+    </div>
+
+    <script>
+        // Datos de vehículos en formato JSON
+        var vehiclesData = {
+            "vehiculos": [
+                {
+                    "nombre": "Declasse Vigero",
+                    "marca": "Declasse",
+                    "modelo": "Vigero",
+                    "precio": 21000,
+                    "imagen": "Vigero_SSSA.png"
+                },
+                {
+                    "nombre": "Pegassi Infernus",
+                    "marca": "Pegassi",
+                    "modelo": "Infernus",
+                    "precio": 250000,
+                    "imagen": "Infernus_SSSA.png"
+                },
+                // Puedes agregar más vehículos aquí
+            ]
+        };
+
+        // Función para cargar los vehículos en la página
+        function loadVehicles() {
+            var vehiclesContainer = document.getElementById("vehicles");
+
+            vehiclesData.vehiculos.forEach(function (vehicle) {
+                var vehicleDiv = document.createElement("div");
+                vehicleDiv.classList.add("vehicle");
+
+                var vehicleImage = document.createElement("img");
+                vehicleImage.src = vehicle.imagen;
+
+                var vehicleName = document.createElement("h2");
+                vehicleName.textContent = vehicle.nombre;
+
+                var vehicleDetails = document.createElement("p");
+                vehicleDetails.textContent = `Marca: ${vehicle.marca}, Modelo: ${vehicle.modelo}, Precio: $${vehicle.precio}`;
+
+                vehicleDiv.appendChild(vehicleImage);
+                vehicleDiv.appendChild(vehicleName);
+                vehicleDiv.appendChild(vehicleDetails);
+
+                vehiclesContainer.appendChild(vehicleDiv);
+            });
+        }
+
+        // Cargar los vehículos al cargar la página
+        window.onload = loadVehicles;
+    </script>
+</body>
+</html>
