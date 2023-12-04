@@ -1,0 +1,148 @@
+{
+    "vehiculos": [
+        {
+            "nombre": "Declasse Vigero",
+            "marca": "Declasse",
+            "modelo": "Vigero",
+            "puertas": 2,
+            "clase": "",
+            "precio": 21000,
+            "imagen": "Vigero_SSSA.png"
+        },
+        {
+            "nombre": "Pegassi Infernus",
+            "marca": "Pegassi",
+            "modelo": "Infernus",
+            "puertas": 2,
+            "clase": "",
+            "precio": 250000,
+            "imagen": "Infernus_SSSA.png"
+        },
+        {
+            "nombre": "Karin Dilettante",
+            "marca": "Karin",
+            "modelo": "Dilettante",
+            "puertas": 4,
+            "clase": "",
+            "precio": 25000,
+            "imagen": "Dilettante_SSSA.png"
+        },
+        {
+            "nombre": "Bravado Banshee",
+            "marca": "Bravado",
+            "modelo": "Banshee",
+            "puertas": 2,
+            "clase": "",
+            "precio": 90000,
+            "imagen": "Banshee_SSSA.png"
+        },
+        {
+            "nombre": "Pegassi Vacca",
+            "marca": "Pegassi",
+            "modelo": "Vacca",
+            "puertas": 2,
+            "clase": "",
+            "precio": 240000,
+            "imagen": "Vacca_SSSA.png"
+        },
+        {
+            "nombre": "Obey Rocoto",
+            "marca": "Obey",
+            "modelo": "Rocoto",
+            "puertas": 4,
+            "clase": "",
+            "precio": 85000,
+            "imagen": "Rocoto_SSSA.png"
+        },
+        {
+            "nombre": "Dewbauchee Exemplar",
+            "marca": "Dewbauchee",
+            "modelo": "Exemplar",
+            "puertas": 4,
+            "clase": "",
+            "precio": 205000,
+            "imagen": "Exemplar_SSSA.png"
+        },
+        {
+            "nombre": "Bravado Hotring Hellfire",
+            "marca": "Bravado",
+            "modelo": "Hotring Hellfire",
+            "puertas": 2,
+            "clase": "",
+            "precio": 1810000,
+            "imagen": "Hotring_Hellfire_SSSA.png"
+        },
+        {
+            "nombre": "Vapid Ratel",
+            "marca": "Vapid",
+            "modelo": "Ratel",
+            "puertas": 2,
+            "clase": "",
+            "precio": 1873000,
+            "imagen": "Ratel_SSSA.png"
+        },
+        {
+            "nombre": "Karin Boor",
+            "marca": "Karin",
+            "modelo": "Boor",
+            "puertas": 2,
+            "clase": "",
+            "precio": 1280000,
+            "imagen": "Boor_SSSA.png"
+        },
+        {
+            "nombre": "Weeny Issi Rally",
+            "marca": "Weeny",
+            "modelo": "Issi Rally",
+            "puertas": 4,
+            "clase": "",
+            "precio": 1835000,
+            "imagen": "Issi_Rally_SSSA.png"
+        },
+        {
+            "nombre": "Dinka Kanjo SJ",
+            "marca": "Dinka",
+            "modelo": "Kanjo SJ",
+            "puertas": 2,
+            "clase": "",
+            "precio": 1370000,
+            "imagen": "Kanjo_SJ_SSSA.png"
+        },
+        {
+            "nombre": "Declasse Granger 3600XL",
+            "marca": "Declasse",
+            "modelo": "Granger 3600XL",
+            "puertas": 4,
+            "clase": "",
+            "precio": 2000000,
+            "imagen": "Granger_3600XL_SSSA.png"
+        },
+        {
+            "nombre": "Grotti Brioso 300",
+            "marca": "Grotti",
+            "modelo": "Brioso 300",
+            "puertas": 2,
+            "clase": "",
+            "precio": 610000,
+            "imagen": "Brioso_300_SSSA.png"
+        },
+        {
+            "nombre": "BF Club",
+            "marca": "BF",
+            "modelo": "Club",
+            "puertas": 2,
+            "clase": "",
+            "precio": 1280000,
+            "imagen": "Club_SSSA.png"
+        },
+        {
+            "nombre": "Bravado Gauntlet Hellfire",
+            "marca": "Bravado",
+            "modelo": "Gauntlet Hellfire",
+            "puertas": 2,
+            "clase": "",
+            "precio": 745000,
+            "imagen": "Gauntlet_Hellfire_SSSA.png"
+        }
+    ]
+}
