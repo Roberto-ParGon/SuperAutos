@@ -20,7 +20,7 @@ img{
   height: 10px;
 }
 
-#vehicles {
+#vehiculos {
   background-color: #ffffff;
   display:block;
   padding: 0px;
@@ -30,7 +30,7 @@ img{
   justify-content: center;
 }
 
-.vehicle-card {
+.tarjeta-vehiculo {
   width: calc(300px - 20px); /* Asegura que se alineen tres tarjetas por fila */
   border: 1px solid #ccc;
   margin: 10px;
@@ -41,7 +41,7 @@ img{
   box-sizing: border-box; /* Incluye el padding y borde en el ancho y alto */
 }
 
-.vehicle-card p {
+.tarjeta-vehiculo p {
   margin: 0%;
   padding: 0%;
   border: 0px;

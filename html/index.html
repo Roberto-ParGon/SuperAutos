@@ -92,8 +92,9 @@
 
     <script>
         fetch('data.json')
-            .then(response => response.json())
+        .then(response => response.json())
             .then(data => {
+                
                 var cont = 1;
                 const vehicles = data.vehiculos;
                 const vehiclesDiv = document.getElementById('vehicles');
