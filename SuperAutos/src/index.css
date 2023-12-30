@@ -15,11 +15,65 @@ img{
   padding: 0%;
   margin: 0%;
 }
+.banner:hover{
+cursor: pointer;
+}
 .top{
-  background-image: linear-gradient(to bottom, #d9a82a, #d9a203);
+  background-image: linear-gradient(to bottom, #ffd000, #f5bc00);
   height: 10px;
 }
+.barraMenu{
+  background-image: linear-gradient(to bottom, #ffd000 40%, #f5bc00 60%);
+  /* box-shadow: 0px 15px 40px rgb(116, 116, 116); */
+  height: 80px;
+  text-align: center;
+  position: relative;
+}
+.botonesBarra{
+  margin: 0px 3px;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-image: linear-gradient(to bottom, #323949 50%, #090f25 60%);
+  height: 65%;
+  width: 140px;
+  color: #e4e4e4;
+  font-size: large;
+  border-color: black;
+}
+.botonOrdenar{
+  margin: 0px 3px;
+  position: relative;
+  top: 50%;
+  text-align: left;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-image: linear-gradient(to bottom, #323949 50%, #090f25 60%);
+  height: 65%;
+  width: 240px;
+  color: #e4e4e4;
+  font-size: large;
+  border-color: black;
+}
+.botonOrdenar img{
+  margin-left: 10%;
+  height: 6%;
+  width: 6%;
+}
+.botonOrdenar:hover{
+  cursor: pointer;
+}
+.textoBoton{
+  text-align: left;
+}
 
+.botonesBarra:hover{
+  background-image: linear-gradient(to bottom,white,white);
+  cursor: pointer;
+  border-color: black;
+  color: black
+}
 #vehiculos {
   background-color: #ffffff;
   display:block;
@@ -49,7 +103,7 @@ img{
 
 .puertas {
   font-weight: bold;
-  color: #bdbdbd;
+  color: #4d4a5e;
   margin: 0px;
   padding: 10px;
   background-image: linear-gradient(to bottom, #ffffff, #e4e4e4); 
@@ -71,6 +125,6 @@ img{
 }
 .precio{
   text-align: right;
-  background-image: linear-gradient(to bottom, #d9a82a, #d9a203);
+  background-image: linear-gradient(to bottom, rgb(255, 208, 0), #eeb90c);
 }
 

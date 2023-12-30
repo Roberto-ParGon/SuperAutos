@@ -5,7 +5,7 @@
             "marca": "Declasse",
             "modelo": "Vigero",
             "puertas": 2,
-            "clase": "",
+            "clase": "Muscle",
             "precio": 21000,
             "imagen": "Vigero_SSSA.png"
         },
@@ -14,7 +14,7 @@
             "marca": "Pegassi",
             "modelo": "Infernus",
             "puertas": 2,
-            "clase": "",
+            "clase": "De Lujo",
             "precio": 250000,
             "imagen": "Infernus_SSSA.png"
         },
@@ -23,7 +23,7 @@
             "marca": "Karin",
             "modelo": "Dilettante",
             "puertas": 4,
-            "clase": "",
+            "clase": "Civil",
             "precio": 25000,
             "imagen": "Dilettante_SSSA.png"
         },
@@ -32,7 +32,7 @@
             "marca": "Bravado",
             "modelo": "Banshee",
             "puertas": 2,
-            "clase": "",
+            "clase": "De Lujo",
             "precio": 90000,
             "imagen": "Banshee_SSSA.png"
         },
@@ -41,7 +41,7 @@
             "marca": "Pegassi",
             "modelo": "Vacca",
             "puertas": 2,
-            "clase": "",
+            "clase": "De Lujo",
             "precio": 240000,
             "imagen": "Vacca_SSSA.png"
         },
@@ -50,7 +50,7 @@
             "marca": "Obey",
             "modelo": "Rocoto",
             "puertas": 4,
-            "clase": "",
+            "clase": "Civil",
             "precio": 85000,
             "imagen": "Rocoto_SSSA.png"
         },
@@ -59,7 +59,7 @@
             "marca": "Dewbauchee",
             "modelo": "Exemplar",
             "puertas": 4,
-            "clase": "",
+            "clase": "De Lujo",
             "precio": 205000,
             "imagen": "Exemplar_SSSA.png"
         },
@@ -68,7 +68,7 @@
             "marca": "Bravado",
             "modelo": "Hotring Hellfire",
             "puertas": 2,
-            "clase": "",
+            "clase": "Especial",
             "precio": 1810000,
             "imagen": "Hotring_Hellfire_SSSA.png"
         },
@@ -77,7 +77,7 @@
             "marca": "Vapid",
             "modelo": "Ratel",
             "puertas": 2,
-            "clase": "",
+            "clase": "Todoterreno",
             "precio": 1873000,
             "imagen": "Ratel_SSSA.png"
         },
@@ -86,7 +86,7 @@
             "marca": "Karin",
             "modelo": "Boor",
             "puertas": 2,
-            "clase": "",
+            "clase": "Pickup",
             "precio": 1280000,
             "imagen": "Boor_SSSA.png"
         },
@@ -95,7 +95,7 @@
             "marca": "Weeny",
             "modelo": "Issi Rally",
             "puertas": 4,
-            "clase": "",
+            "clase": "Todoterreno",
             "precio": 1835000,
             "imagen": "Issi_Rally_SSSA.png"
         },
@@ -104,7 +104,7 @@
             "marca": "Dinka",
             "modelo": "Kanjo SJ",
             "puertas": 2,
-            "clase": "",
+            "clase": "Civil",
             "precio": 1370000,
             "imagen": "Kanjo_SJ_SSSA.png"
         },
@@ -113,7 +113,7 @@
             "marca": "Declasse",
             "modelo": "Granger 3600XL",
             "puertas": 4,
-            "clase": "",
+            "clase": "De Lujo",
             "precio": 2000000,
             "imagen": "Granger_3600XL_SSSA.png"
         },
@@ -122,7 +122,7 @@
             "marca": "Grotti",
             "modelo": "Brioso 300",
             "puertas": 2,
-            "clase": "",
+            "clase": "Clasico",
             "precio": 610000,
             "imagen": "Brioso_300_SSSA.png"
         },
@@ -131,7 +131,7 @@
             "marca": "BF",
             "modelo": "Club",
             "puertas": 2,
-            "clase": "",
+            "clase": "Clasico",
             "precio": 1280000,
             "imagen": "Club_SSSA.png"
         },
@@ -140,7 +140,7 @@
             "marca": "Bravado",
             "modelo": "Gauntlet Hellfire",
             "puertas": 2,
-            "clase": "",
+            "clase": "Muscle",
             "precio": 745000,
             "imagen": "Gauntlet_Hellfire_SSSA.png"
         }
