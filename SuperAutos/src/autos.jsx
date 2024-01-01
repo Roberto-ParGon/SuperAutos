@@ -1,11 +1,27 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import axios, { } from 'axios';
 import data from './datos.json'
 function AutoMain() {
     var estadoBoton = 1
     var eleccionActual=0
+    //let data
+    const [Cargando, setCargando] = useState(false) 
+    /* const cargarDatos = async (evento) =>{
+        evento.preventDefault()
+        await axios.get('https//localhost:4567/vehiculos/')
+        .then(function(res){
+            console.log("datos en response", res.data);
+            setCargando(false)
+            data=res.data
+            return (res.data);
+        })
+        .catch(function (error) {
+            console.error(error);
+            setCargando(false);
+        })
+    } */
     const cargarCoches = async (evento)=>{
         eleccionActual=0
         console.log('cargar coche inicio')
@@ -62,7 +78,7 @@ function AutoMain() {
                 //console.log('el contador va en: ',i)
                 i++;
             });
-            console.log("cargar coches finalizado")
+            console.log("cargar coches 2 pasajeros finalizado")
         } catch (error) {
             console.error(error)
         } 
@@ -93,7 +109,7 @@ function AutoMain() {
                 //console.log('el contador va en: ',i)
                 i++;
             });
-            console.log("cargar coches finalizado")
+            console.log("cargar coches 4 pasajeros finalizado")
         } catch (error) {
             console.error(error)
         } 
@@ -124,7 +140,7 @@ function AutoMain() {
                 //console.log('el contador va en: ',i)
                 i++;
             });
-            console.log("cargar coches finalizado")
+            console.log("cargar coches todoterreno finalizado")
         } catch (error) {
             console.error(error)
         } 
@@ -155,7 +171,7 @@ function AutoMain() {
                 //console.log('el contador va en: ',i)
                 i++;
             });
-            console.log("cargar coches finalizado")
+            console.log("cargar coches de lujo finalizado")
         } catch (error) {
             console.error(error)
         } 
@@ -177,9 +193,9 @@ function AutoMain() {
             imagen.src = '/src/assets/arrowUp.png'
         }
         estadoBoton= estadoBoton * -1
-        console.log(estadoBoton)
         
-        
+        //console.log(estadoBoton)
+        console.log(eleccionActual)
         switch (eleccionActual) {
             case 0:
                 cargarCoches()
@@ -195,28 +211,39 @@ function AutoMain() {
                 break;
             case 4:
                 soloDeLujo()
+                //console.log(eleccionActual)
                 break;
             default:
                 console.log('valor fuera del alcance')
                 break;
         }
     }
+            
+    const presionarEnter = async(e)=>{
+        var keycode = (e.keyCode ? e.keyCode : e.which);
+        
+        if (keycode == '13')
+            document.activeElement.click();
+        
+    }
+
     return(
     <>
-        <div onLoad={cargarCoches}>
-            <div className="top"></div>
-            <h1><img src="/src/banner.png" alt="Southernsanandreassuperautos.com" class='banner' onClick={cargarCoches}/></h1>
+        <div>
+            <div className="top" ></div>
+            <h1 onLoad={cargarCoches}><img id='bann' src="/src/banner.png" alt="Southernsanandreassuperautos.com" className='banner' draggable = 'false' tabIndex={0} onClick={cargarCoches} onKeyUp={presionarEnter}/></h1>
             <div className='barraMenu'>
-                <button type="button" onClick={solo2Pasajeros} className='botonesBarra' id='2pasajeros'>2 pasajeros</button>
-                <button type="button" onClick={solo4Pasajeros} className='botonesBarra' id='4pasajeros'>4 pasajeros</button>
-                <button type="button" onClick={soloTodoterreno} className='botonesBarra' id='todoterreno'>Todoterreno</button>
-                <button type="button" onClick={soloDeLujo} className='botonesBarra' id='lujo'>De lujo</button>
-                <button type="button" onClick={cambiarEstadoOrdenar} className='botonOrdenar' id='ordenarPor'>
+                <button type="button" onClick={cambiarEstadoOrdenar} className='botonOrdenar' id='ordenarPor' tabIndex={0}>
                     <div className='botonAscDes'>
                         <span className='textoBoton'>Ordenar por Precio</span>
                         <img src='/src/assets/arrowUp.png' id='imagenSwitch'></img>
                     </div>
                 </button>
+                <button type="button" onClick={solo2Pasajeros} className='botonesBarra' id='2pasajeros' tabIndex={0}>2 pasajeros</button>
+                <button type="button" onClick={solo4Pasajeros} className='botonesBarra' id='4pasajeros' tabIndex={0}>4 pasajeros</button>
+                <button type="button" onClick={soloTodoterreno} className='botonesBarra' id='todoterreno' tabIndex={0}>Todoterreno</button>
+                <button type="button" onClick={soloDeLujo} className='botonesBarra' id='lujo' tabIndex={0}>De lujo</button>
+                
             </div>
             <div id="vehiculos"></div>
             

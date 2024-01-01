@@ -15,6 +15,12 @@ img{
   padding: 0%;
   margin: 0%;
 }
+
+.banner{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
 .banner:hover{
 cursor: pointer;
 }
@@ -42,11 +48,20 @@ cursor: pointer;
   font-size: large;
   border-color: black;
 }
+.botonesBarra:hover{
+  cursor: pointer;
+}
+.botonesBarra:active:hover{
+  background-image: linear-gradient(to bottom,#454e61 50%,#202a4e 60%);
+  border-color: black;
+  color: white
+}
 .botonOrdenar{
   margin: 0px 3px;
   position: relative;
   top: 50%;
-  text-align: left;
+  text-align: center;
+  /* letter-spacing: 1em; */ /* Creado para probar si cumplia con el criterio 1.4.12 del WCAG 2.1*/
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-image: linear-gradient(to bottom, #323949 50%, #090f25 60%);
@@ -64,16 +79,18 @@ cursor: pointer;
 .botonOrdenar:hover{
   cursor: pointer;
 }
+.botonOrdenar:active:hover{
+  background-image: linear-gradient(to bottom,#454e61 50%,#202a4e 60%);
+  border-color: black;
+  color: white
+}
 .textoBoton{
   text-align: left;
+  
+  font-size: auto;
 }
 
-.botonesBarra:hover{
-  background-image: linear-gradient(to bottom,white,white);
-  cursor: pointer;
-  border-color: black;
-  color: black
-}
+
 #vehiculos {
   background-color: #ffffff;
   display:block;

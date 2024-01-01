@@ -54,11 +54,11 @@ public class Auto {
         this.marca = marca;
     }
 
-    public int getYear() {
+    public int getAnio() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setAnio(int year) {
         this.year = year;
     }
 
