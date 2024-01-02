@@ -5,21 +5,23 @@ public class Auto {
     private String nombre;
     private String modelo;
     private String marca;  
-    private int year;
     private int puertas;  
+    private String clase;
     private double precio;
+    private String imagen;
 
     public Auto() {
     }
 
-    public Auto(String id, String nombre, String modelo, String marca, int year, int puertas, double precio) {
+    public Auto(String id, String nombre, String modelo, String marca, int puertas, String clase, double precio, String imagen) {
         this.id = id;
         this.nombre = nombre;
         this.modelo = modelo;
         this.marca = marca;
-        this.year = year;
         this.puertas = puertas;
+        this.clase = clase;
         this.precio = precio;
+        this.imagen = imagen;
     }
 
     public String getId() {
@@ -54,20 +56,20 @@ public class Auto {
         this.marca = marca;
     }
 
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
     public int getPuertas() {
         return puertas;
     }
 
     public void setPuertas(int puertas) {
         this.puertas = puertas;
+    }
+
+    public String getClase() {
+        return clase;
+    }
+
+    public void setClase(String clase) {
+        this.clase = clase;
     }
 
     public double getPrecio() {
@@ -77,4 +79,15 @@ public class Auto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+}   
+    
 }

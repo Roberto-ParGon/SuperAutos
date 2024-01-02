@@ -1,24 +1,17 @@
 package mx.uv;
 
+
 import static spark.Spark.*;
 
-import java.util.HashMap;
-import java.util.UUID;
-import com.google.gson.*;
+import java.util.List;
 
-/**
- * Hello world!
- *
- */
+import com.google.gson.Gson;
+
 public class App {
     static Gson gson = new Gson();
-    static HashMap<String, Auto> autos = new HashMap<String, Auto>();
+    static AutoDAO autoDAO = new AutoDAO(Conexion.getConnection());
 
     public static void main(String[] args) {
-
-        System.out.println("Hello World!");
-
-        // port(80);
         port(getHerokuAssignedPort());
 
         options("/*", (request, response) -> {
@@ -37,10 +30,11 @@ public class App {
         });
         before((request, response) -> response.header("Access-Control-Allow-Origin", "*"));
 
+        // Endpoint para obtener todos los autos
         get("/autos", (request, response) -> {
             response.type("application/json");
-            return gson.toJson(autos.values());
-            // return gson.toJson(DAO.obtenerTodosAutos());
+            List<Auto> autos = autoDAO.obtenerTodosvehiculos();
+            return gson.toJson(autos);
         });
 
     }
